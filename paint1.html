@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sample画板</title>
+	<link rel="stylesheet" type="text/css" href="paint.css">
+	<script type="text/javascript" src="paint.js"></script>
+</head>
+<body>
+	<div class="container">
+		<canvas id="drawing" width="400px" height="600px" style="background:lightgrey">
+			你的浏览器不支持canvas画图
+		</canvas>
+
+		<div id="tool">
+			<h3>画笔颜色:</h3>
+			<div id="ctxColor">
+				
+				<button id="color1" class="selColor"></button>
+				<button id="color2" class="selColor"></button>
+				<button id="color3" class="selColor"></button>
+				<button id="color4" class="selColor"></button>
+				<button id="color5" class="selColor"></button>
+				<button id="co">生成颜色</button>
+			</div>
+			<h3>画笔粗细:</h3>
+			<div class="ctxSize">
+				<form oninput="o.value=r.value">
+					
+					<output name="o">10</output>
+					<input id="ctxWid" type="range" value="10" max="20" name="r">
+				</form>
+				
+			</div>
+			<h3>当前画笔样式：</h3>
+			<div id="ctxStyle">
+					
+			</div>
+		</div>		
+	</div>
+	
+	
+	
+	
+
+</body>
+</html>
